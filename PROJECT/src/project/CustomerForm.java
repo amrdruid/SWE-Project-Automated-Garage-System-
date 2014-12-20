@@ -41,6 +41,11 @@ public class CustomerForm extends javax.swing.JFrame {
         });
 
         logInButton.setText("LOG IN");
+        logInButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logInButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,6 +75,11 @@ public class CustomerForm extends javax.swing.JFrame {
          this.setVisible(false);
          new signUpForm().setVisible(true);
     }//GEN-LAST:event_signUpButtonActionPerformed
+
+    private void logInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInButtonActionPerformed
+         this.setVisible(false);
+         new CheckLoginForm().setVisible(true);
+    }//GEN-LAST:event_logInButtonActionPerformed
 
     /**
      * @param args the command line arguments
