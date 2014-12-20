@@ -42,6 +42,11 @@ public  class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton2.setText("Manager");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Employee");
 
@@ -80,6 +85,11 @@ public  class NewJFrame extends javax.swing.JFrame {
        this.setVisible(false);
        new CustomerForm().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            this.setVisible(false);
+            new ManagerLoginForm().setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
